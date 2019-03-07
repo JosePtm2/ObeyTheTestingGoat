@@ -1,5 +1,7 @@
+from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 import unittest
+import time
 
 
 class NewVisitorTest(unittest.TestCase):
@@ -18,17 +20,31 @@ class NewVisitorTest(unittest.TestCase):
 
         # She notices the page title and header mention ToDoLists
         self.assertIn('To-Do', self.browser.title)
-        self.fail('Finish the Test!')
+        header_text = self.browser.find_element_by_tag_name('h1').text
+        self.assertIn('To-Do', header_text)
 
         # She is invited to enter a to-do item straight away
-
+        inputbox = self.browser.find_element_by_id('id_new_item')
+        self.assertEqual(
+            inputbox.get_attribute('placeholder'),
+            'Enter a ToDo Item'
+        )
         # She types 'Buy stuff from superMarket' into a text box
+        inputbox.send_keys('Buy stuff from superMarket')
 
         # When she hits enter, the page updates, and now the page lists
         # '1: Buy stuff from superMarket' as an item in a ToDoList
+        inputbox.send_keys(Keys.ENTER)
+        time.sleep(1)
 
+        table = self.browser.find_element_by_id('id_list_table')
+        rows = table.find_elements_by_tag_name('tr')
+        self.assertTrue(
+            any(row.text == '1: Buy stuff from superMarket' for row in rows)
+        )
         # There is still a text box inviting her to add another item. She
         # enters 'Go to the shoe shop'
+        self.fail('Finish the Test!')
 
         # The page updates again, and now shows both items on her list
         # She notices that the site has generated a unique URL for her,
