@@ -1,10 +1,11 @@
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
+from django.test import LiveServerTestCase
 import unittest
 import time
 
 
-class NewVisitorTest(unittest.TestCase):
+class NewVisitorTest(LiveServerTestCase):
 
     def setUp(self):
         self.browser = webdriver.Firefox()
@@ -21,7 +22,7 @@ class NewVisitorTest(unittest.TestCase):
 
         # FooName has heard about a cool new online toDoApp.
         # She opens FireFox to check out its homepage
-        self.browser.get('http://localhost:8000')
+        self.browser.get(self.live_server_url)
 
         # She notices the page title and header mention ToDoLists
         self.assertIn('To-Do', self.browser.title)
@@ -59,7 +60,3 @@ class NewVisitorTest(unittest.TestCase):
         # She visits the provided URL and her todolist is there.
 
         # Satisfied she leaves.
-
-
-if __name__ == '__main__':
-    unittest.main(warnings='ignore')
