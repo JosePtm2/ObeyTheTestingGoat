@@ -39,14 +39,23 @@ class NewVisitorTest(unittest.TestCase):
 
         table = self.browser.find_element_by_id('id_list_table')
         rows = table.find_elements_by_tag_name('tr')
-        self.assertTrue(
-            any(row.text == '1: Buy stuff from superMarket' for row in rows)
-        )
+        self.assertIn('1: Buy stuff from superMarket',
+                      [row.text for row in rows])
         # There is still a text box inviting her to add another item. She
         # enters 'Go to the shoe shop'
-        self.fail('Finish the Test!')
+        inputbox = self.browser.find_element_by_id('id_new_item')
+        inputbox.send_keys('Go to the shoe shop')
+        inputbox.send_keys(Keys.ENTER)
+        time.sleep(1)
 
         # The page updates again, and now shows both items on her list
+        table = self.browser.find_element_by_id('id_list_table')
+        rows = table.find_elements_by_tag_name('tr')
+        self.assertIn('1: Buy stuff from superMarket',
+                      [row.text for row in rows])
+
+        self.assertIn('2: Go to the shoe shop', [row.text for row in rows])
+
         # She notices that the site has generated a unique URL for her,
         # there is some explanatory text to that effect
 
