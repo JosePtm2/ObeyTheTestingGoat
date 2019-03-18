@@ -4,7 +4,7 @@ from selenium import webdriver
 from django.test import LiveServerTestCase
 import time
 
-MAX_WAIT = 10
+MAX_WAIT = 1
 
 
 class NewVisitorTest(LiveServerTestCase):
@@ -87,7 +87,7 @@ class NewVisitorTest(LiveServerTestCase):
         # Francis visits the homepage. There's no sign of fooGirl's lists
         self.browser.get(self.live_server_url)
         page_text = self.browser.find_element_by_tag_name('body').text
-        self.assertNotIn('1: Buy stuff from superMarket', page_text)
+        self.assertNotIn('This is a Test', page_text)
         self.assertNotIn('2: Go to the shoe shop', page_text)
 
         # Francis starts a new list by entering a new item.
