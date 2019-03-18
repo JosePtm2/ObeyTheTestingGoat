@@ -1876,3 +1876,87 @@ console.error: PushService:
 
 JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
 JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1552918942783	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.JFSnXYOUZnU1"
+1552918943064	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1552918943065	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1552920304092	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.RsttdSJ91Lzx"
+1552920304370	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1552920304371	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:28209): Gtk-WARNING **: 14:45:05.498: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:28209): Gtk-WARNING **: 14:45:05.498: Theme parsing error: <data>:1:76: Expected ')' in color definition
+1552920307965	Marionette	INFO	Listening on port 44105
+1552920308027	Marionette	WARN	TLS certificate errors will be ignored for this session
+1552920309454	Marionette	INFO	Stopped listening on port 44105
+JavaScript error: resource://activity-stream/lib/ActivityStreamPrefs.jsm, line 23: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrefBranch.removeObserver]
+console.error: (new Error("Transaction canceled due to a closed connection.", "resource://gre/modules/Sqlite.jsm", 569))
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+console.error: PushService: 
+  clearOriginData: Error clearing origin data:
+  UnknownError
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  UnknownError
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+1552920312053	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.XzQUewn4DmEq"
+1552920312349	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1552920312349	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:28508): Gtk-WARNING **: 14:45:13.095: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:28508): Gtk-WARNING **: 14:45:13.095: Theme parsing error: <data>:1:76: Expected ')' in color definition
+1552920316173	Marionette	INFO	Listening on port 37083
+1552920316264	Marionette	WARN	TLS certificate errors will be ignored for this session
+1552920317004	Marionette	INFO	Stopped listening on port 37083
+JavaScript error: resource://activity-stream/lib/ActivityStreamPrefs.jsm, line 23: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrefBranch.removeObserver]
+[Parent 28508, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-DVGW0d/firefox-65.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+[Parent 28508, Gecko_IOThread] WARNING: pipe error (97): Connection reset by peer: file /build/firefox-DVGW0d/firefox-65.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 841: Error: Connection is not open.
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+console.error: PushService: 
+  clearOriginData: Error clearing origin data:
+  UnknownError
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  UnknownError
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+1552920319891	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.c76hUasyhgal"
+1552920320197	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1552920320197	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+
+(firefox:28784): Gtk-WARNING **: 14:45:21.463: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:28784): Gtk-WARNING **: 14:45:21.463: Theme parsing error: <data>:1:76: Expected ')' in color definition
+1552920324139	Marionette	INFO	Listening on port 38081
+1552920324212	Marionette	WARN	TLS certificate errors will be ignored for this session
+1552920325493	Marionette	INFO	Stopped listening on port 38081
+JavaScript error: resource://activity-stream/lib/ActivityStreamPrefs.jsm, line 23: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrefBranch.removeObserver]
+[Parent 28784, Gecko_IOThread] WARNING: pipe error (81): Connection reset by peer: file /build/firefox-DVGW0d/firefox-65.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+[Parent 28784, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-DVGW0d/firefox-65.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+console.error: PushService: 
+  clearOriginData: Error clearing origin data:
+  UnknownError
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  UnknownError
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
