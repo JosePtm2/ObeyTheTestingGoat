@@ -6,9 +6,9 @@
 
 {% block table %}
 
-<table id="id_list_table">
-  {% for item in list.item.set.all %}
-  <tr><td>{{ forloop.counter }}: {{ item_text }}</td></tr>
+<table id="id_list_table" class="table">
+  {% for item in list.item_set.all %}
+  <tr><td>{{ forloop.counter }}: {{ item.text }}</td></tr>
   {% endfor %}
 </table>
 
